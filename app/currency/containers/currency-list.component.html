@@ -1,0 +1,9 @@
+<ActionBar title="Currency List" class="action-bar"></ActionBar>
+
+<StackLayout>
+  <ListView [items]="currency$ | async" class="list-group" height="100%">
+    <ng-template let-item="item">
+      <app-currency-item [currency]="item"></app-currency-item>
+    </ng-template>
+  </ListView>
+</StackLayout>

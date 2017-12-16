@@ -1,0 +1,6 @@
+<GridLayout columns="*, auto" , rows="*, *">
+  <Label col="0" row="0" [text]="currency.name" class="list-group-item"></Label>
+  <Label col="0" row="1" [text]="currency.symbol" class="list-group-item"></Label>
+  <Label col="1" row="0" [text]="currency.percent_change_1h" class="list-group-item"></Label>
+  <Label col="1" row="1" [text]="currency.price_usd | currency:'USD':'$'" class="list-group-item"></Label>
+</GridLayout>
